@@ -1,0 +1,11 @@
+body { background: rgb(252, 252, 252); border: 1px #e4e4e4; }
+.wrapper { width: 200px; margin: auto; font-family: 'Source Sans Pro', arial, sans-serif; font-size: 14px; position: relative; }
+h1 { font-size: 20px; margin: 0 0 5px 0; padding-bottom: 5px; border-bottom: 1px solid rgb(185, 185, 185); font-weight: normal; }
+#saveStatus { position: absolute; right: 0px; top: 4px; color: gray; }
+.item { margin: 5px 0 5px 0; }
+label { display: block; margin-left: 1px; }
+input, select { width: 100%; padding: 2px 3px; border-radius: 2px; border: 1px solid rgb(196, 196, 196); }
+input[type='text'], input[type='password'] { padding: 3px 2px; }
+hr { border: none; border-bottom: 1px solid rgb(185, 185, 185); margin: 10px 0; }
+button { border-radius: 2px; border: 1px solid rgb(196, 196, 196); padding: 5px 15px; font-size: 14px; width: 100%; }
+button:hover { cursor: pointer; background: white; }

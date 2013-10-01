@@ -1,0 +1,33 @@
+{
+  "name": "CodeBlue",
+  "version": "0.2",
+  "description": "No work, all play. It's CodeBlue.",
+  "icons": { "16": "img/icon16.png", "48": "img/icon48.png", "128": "img/icon128.png" },
+  "background": { "scripts": ["js/bg.js"] },
+  "page_action" :
+  {
+    "default_icon": { "19": "img/icon19.png", "38": "img/icon38.png" },
+    "default_title" : "codeBlue",
+    "default_popup": "options.html"
+  },
+  "permissions" : [
+    "tabs",
+    "http://jetblue.rp4me.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://jetblue.rp4me.com/*"],
+      "css": ["css/page.css"],
+      "js": ["js/jquery.js", "js/page.js"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "js/page.js",
+    "js/jquery.js",
+    "js/jquery-2.0.3.min.map",
+    "css/page.css"
+  ],
+  "options_page": "options.html",
+  "manifest_version": 2
+}
